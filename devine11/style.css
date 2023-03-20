@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  background: #171925;
+}
+.main {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+img {
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 18px 0px 18px 10px;
+  border: 1px solid #3c3e48;
+  background: #1a212b;
+  border-radius: 10px;
+  color: #9294a3;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+input::placeholder {
+  font-size: 15px;
+  color: #9294a3;
+}
+input:focus {
+  outline: 1px solid #3c3e48;
+  color: #9294a3;
+}
+label {
+  color: #3c3e48;
+  font-size: 13px;
+  margin: 10px;
+}
+select {
+  width: 100%;
+  padding: 18px 0px 18px 10px;
+  background: #1a212b;
+  color: #9294a3;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid #3c3e48;
+}
+select:focus {
+  outline: 1px solid #3c3e48;
+  color: #9294a3;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  background: #1a212b;
+  border: 1px solid #3c3e48;
+  border-radius: 10px;
+  color: #9294a3;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+textarea:focus {
+  outline: 1px solid #3c3e48;
+  color: #9294a3;
+}
+button {
+  width: 50%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: large;
+}
+.btns {
+  display: flex;
+  column-gap: 10px;
+}
+.btn1 {
+  background: #1a212b;
+  border: 1px solid #3c3e48;
+  border-radius: 10px;
+  /* margin-right: 20px; */
+}
+.btn2 {
+  background: #d01f2d;
+  border: none;
+  border-radius: 10px;
+}
