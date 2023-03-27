@@ -39,11 +39,11 @@
           <label for="phone">Phone Number</label>
           <input
             type="tel"
-            name="phone"
+            name="phoneNumber"
             placeholder="Enter phone number"
             pattern="[0-9]{10}"
             title="10 digits only"
-            id="phone"
+            id="phoneNumber"
             disabled
           />
           <label for="subject">Subject</label>
@@ -111,12 +111,12 @@
         for (const [key, value] of urlParams.entries()) {
           queryParams[key] = value;
         }
-
+        console.log(queryParams);
         return queryParams;
       }
 
       function setFormValues(queryParams) {
-        const formFields = ["name", "email", "phone", "subject"];
+        const formFields = ["name", "email", "phoneNumber", "subject"];
 
         formFields.forEach((field) => {
           if (queryParams[field]) {
