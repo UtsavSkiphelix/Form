@@ -17,7 +17,7 @@
     <section>
       <div class="main">
         <div>
-          <img src="images/Group 1000002076.png" alt="" />
+          <img src="images/Group banner.png" alt="" />
         </div>
         <form action="" method="post" id="myForm">
           <label for="name"> Name</label>
@@ -73,7 +73,6 @@
       </div>
     </section>
     <script>
-
       document
         .getElementById("myForm")
         .addEventListener("submit", async (event) => {
@@ -104,6 +103,32 @@
             console.error("Fetch error:", error);
           }
         });
+      function getQueryParams() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const queryParams = {};
+
+        for (const [key, value] of urlParams.entries()) {
+          queryParams[key] = value;
+        }
+
+        return queryParams;
+      }
+
+      function setFormValues(queryParams) {
+        const formFields = ["name", "email", "phone", "subject"];
+
+        formFields.forEach((field) => {
+          if (queryParams[field]) {
+            document.getElementById(field).value = queryParams[field];
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const queryParams = getQueryParams();
+        setFormValues(queryParams);
+      });
     </script>
   </body>
 </html>
