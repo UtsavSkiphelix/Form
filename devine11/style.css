@@ -1,10 +1,19 @@
+:root {
+  --bg: #171925;
+  --border: #3c3e48;
+  --input_bg: #1a212b;
+  --text_color: #9294a3;
+  --btn-bg: #d01f2d;
+  --btn-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 section {
-  background: #171925;
+  background: var(--bg);
 }
 .main {
   width: 90%;
@@ -18,64 +27,64 @@ img {
 input {
   width: 100%;
   padding: 18px 0px 18px 10px;
-  border: 1px solid #3c3e48;
-  background: #1a212b;
+  border: 1px solid var(--border);
+  background: var(--input_bg);
   border-radius: 10px;
-  color: #9294a3;
+  color: var(--text_color);
   font-size: 15px;
   margin-bottom: 10px;
 }
 input::placeholder {
   font-size: 15px;
-  color: #9294a3;
+  color: var(--text_color);
 }
 input:focus {
-  outline: 1px solid #3c3e48;
-  color: #9294a3;
+  outline: 1px solid var(--border);
+  color: var(--text_color);
 }
 label {
-  color: #3c3e48;
+  color: var(--border);
   font-size: 13px;
   margin: 10px;
 }
 select {
   width: 100%;
   padding: 18px 0px 18px 10px;
-  background: #1a212b;
-  color: #9294a3;
+  background: var(--input_bg);
+  color: var(--text_color);
   border-radius: 10px;
   font-size: 15px;
-  border: 1px solid #3c3e48;
+  border: 1px solid var(--border);
 }
 select:focus {
-  outline: 1px solid #3c3e48;
-  color: #9294a3;
+  outline: 1px solid var(--border);
+  color: var(--text_color);
   width: 100%;
 }
 
 textarea {
   width: 100%;
-  background: #1a212b;
-  border: 1px solid #3c3e48;
+  background: var(--input_bg);
+  border: 1px solid var(--border);
   border-radius: 10px;
-  color: #9294a3;
+  color: var(--text_color);
   padding-top: 10px;
   padding-left: 10px;
   font-size: 15px;
 }
 textarea::placeholder {
-  color: #9294a3;
+  color: var(--text_color);
   font-weight: 500;
   font-size: 16px;
 }
 textarea:focus {
-  outline: 1px solid #3c3e48;
-  color: #9294a3;
+  outline: 1px solid var(--border);
+  color: var(--text_color);
 }
 button {
   width: 50%;
   padding: 15px 0;
-  color: #fff;
+  color: var(--btn-color);
   font-size: large;
 }
 .btns {
@@ -83,13 +92,12 @@ button {
   column-gap: 10px;
 }
 .btn1 {
-  background: #1a212b;
-  border: 1px solid #3c3e48;
+  background: var(--input_bg);
+  border: 1px solid var(--border);
   border-radius: 10px;
-  /* margin-right: 20px; */
 }
 .btn2 {
-  background: #d01f2d;
+  background: var(--btn-bg);
   border: none;
   border-radius: 10px;
 }
